@@ -19,6 +19,9 @@ jobs:
 
     - name: Test with flake8 and django rests
       run:
+        # 1
         python -m flake8
+        # 2
         cd infra_project/
+        # 3
         python manage.py test
